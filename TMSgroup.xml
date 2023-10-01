@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+	<groups><run><include name="Smoke"></include></run></groups>
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="com.tourPackage.NavigateToTourPackagePOM"/>
+      <class name="com.booking.ManageBookingsPOM"/>
+      <class name="com.tourPackage.PackageActionsPOM"/>
+      <class name="com.manageBookings.CancelPackagePOM"/>
+      <class name="com.login.VerifyAdminLoginPOM"/>
+      <class name="com.manageBookings.VerifyManageUsersPOM"/>
+      <class name="com.enquiry.EnquiryToAdminPOM"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
